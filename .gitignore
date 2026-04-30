@@ -1,0 +1,43 @@
+# Scan reports — may contain real IP/network data, never push these
+**/reports/
+*.json
+*.html
+*.xml
+*.csv
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Secrets
+config.ini
+secrets.py
+*.key
+*.pem
+*.crt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Old root-level files (replaced by new structure)
+/scanner.py
