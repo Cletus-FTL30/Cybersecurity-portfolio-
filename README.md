@@ -13,7 +13,7 @@ Each project has two versions:
 | # | Project | Python | Tools | Status |
 |---|---------|--------|-------|--------|
 | 01 | [Port Scanner](./01-port-scanner/) | scanner.py | Nmap | Complete |
-| 02 | [Packet Sniffer](./02-packet-sniffer/) | sniffer.py | Wireshark | Upcoming |
+| 02 | [Packet Sniffer](./02-packet-sniffer/) | sniffer.py | Wireshark | Complete |
 | 03 | [Brute Force Tool](./03-brute-force/) | bruteforce.py | Hydra | Upcoming |
 | 04 | [Subdomain Fuzzer](./04-subdomain-fuzzer/) | fuzzer.py | Gobuster | Upcoming |
 | 05 | [SQL Injection Scanner](./05-sql-injection-scanner/) | sqli_scanner.py | SQLMap | Upcoming |
