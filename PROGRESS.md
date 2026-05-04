@@ -39,7 +39,7 @@
 ---
 
 ## Project 2: Network Packet Sniffer
-**Status:** [~] In progress — screenshots need final redaction, then push to GitHub
+**Status:** [x] Complete
 
 ### Python Version Tasks
 - [x] Packet capture with Scapy
@@ -61,7 +61,7 @@
 - [~] Redact screenshots (1 and 2 need more redaction — other devices' IPs visible)
 - [x] Write wireshark_guide.md
 - [x] Write tools/README.md
-- [ ] Push to GitHub
+- [x] Push to GitHub
 
 ---
 
@@ -114,4 +114,4 @@
 | 2026-04-28 | Port Scanner (Nmap) | Completed tools version — full port scan, service detection, saved report, wrote nmap_guide.md walkthrough |
 | 2026-04-30 | GitHub | Set up SSH authentication, connected repo to github.com/Cletus-FTL30/Cybersecurity-portfolio-, fixed all broken links, reorganised file structure, pushed Project 1 to main branch |
 | 2026-05-03 | Packet Sniffer (Python) | Built sniffer.py with Scapy — TCP/UDP/ICMP/DNS detection, timestamps, argparse CLI, log file output |
-| 2026-05-03 | Packet Sniffer (Wireshark) | Ran live capture on ens38, applied dns/icmp/http filters, saved capture.pcapng, took 4 screenshots, wrote wireshark_guide.md — awaiting screenshot re-redaction before GitHub push |
+| 2026-05-03 | Packet Sniffer (Wireshark) | Ran live capture on ens38, applied dns/icmp/http filters, saved capture.pcapng, took 4 screenshots, wrote wireshark_guide.md, pushed to GitHub |
