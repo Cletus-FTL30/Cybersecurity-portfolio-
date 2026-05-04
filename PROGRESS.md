@@ -66,7 +66,24 @@
 ---
 
 ## Project 3: Brute Force Tool
-**Status:** [ ] Not started
+**Status:** [x] Complete
+
+### Python Version Tasks
+- [x] SSH brute forcing with Paramiko
+- [x] FTP brute forcing with ftplib
+- [x] Multi-threading support (-T flag)
+- [x] argparse CLI (-t, -u, -w, -s, -p, -T, -o)
+- [x] Log file output
+- [x] README.md
+
+### Hydra Tools Version Tasks
+- [x] Prepare wordlist
+- [x] Brute force SSH with Hydra
+- [x] Brute force FTP with Hydra
+- [x] Take screenshots
+- [x] Write hydra_guide.md
+- [x] Write tools/README.md
+- [x] Push to GitHub
 
 ---
 
