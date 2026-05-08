@@ -88,7 +88,26 @@
 ---
 
 ## Project 4: Directory/Subdomain Fuzzer
-**Status:** [ ] Not started
+**Status:** [x] Complete
+
+### Python Version Tasks
+- [x] Directory fuzzing with HTTP requests
+- [x] File extension discovery (.php, .bak, .txt)
+- [x] Response code filtering (200, 301, 302, 403)
+- [x] Multi-threading
+- [x] Professional HTML report with colour-coded badges
+- [x] argparse CLI (-t, -w, -e, -T, -o, -r)
+- [x] README.md
+
+### Gobuster Tools Version Tasks
+- [x] Set up lab (hidden dirs + sensitive files on Apache)
+- [x] Root directory scan
+- [x] Subdirectory scan (found config.bak)
+- [x] Take 4 screenshots (2 Gobuster + 2 HTML reports)
+- [x] Write gobuster_guide.md
+- [x] Write tools/README.md
+- [x] Fix screenshot image links in all guides (Projects 2, 3, 4)
+- [x] Push to GitHub
 
 ---
 
@@ -134,4 +153,6 @@
 | 2026-05-03 | Packet Sniffer (Wireshark) | Ran live capture on ens38, applied dns/icmp/http filters, saved capture.pcapng, took 4 screenshots, wrote wireshark_guide.md, pushed to GitHub |
 | 2026-05-04 | Brute Force Tool (Python) | Built bruteforce.py — SSH + FTP brute forcing, multi-threading, argparse CLI, log file output |
 | 2026-05-04 | Brute Force Tool (Hydra) | Ran Hydra against SSH and FTP on Cletus-lab, took 2 screenshots, wrote hydra_guide.md, pushed to GitHub |
-| 2026-05-05 | Project 4 | Starting Directory/Subdomain Fuzzer — Python + Gobuster tools version |
+| 2026-05-08 | Directory Fuzzer (Python) | Built fuzzer.py — directory + file fuzzing, threading, HTML report with colour-coded badges |
+| 2026-05-08 | Directory Fuzzer (Gobuster) | Ran Gobuster against Apache VM, found hidden dirs + config.bak, wrote gobuster_guide.md, pushed to GitHub |
+| 2026-05-08 | All guides | Fixed screenshot image links in wireshark_guide.md, hydra_guide.md, gobuster_guide.md |
