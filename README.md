@@ -14,8 +14,8 @@ Each project has two versions:
 |---|---------|--------|-------|--------|
 | 01 | [Port Scanner](./01-port-scanner/) | scanner.py | Nmap | Complete |
 | 02 | [Packet Sniffer](./02-packet-sniffer/) | sniffer.py | Wireshark | Complete |
-| 03 | [Brute Force Tool](./03-brute-force/) | bruteforce.py | Hydra | Upcoming |
-| 04 | [Subdomain Fuzzer](./04-subdomain-fuzzer/) | fuzzer.py | Gobuster | Upcoming |
+| 03 | [Brute Force Tool](./03-brute-force/) | bruteforce.py | Hydra | Complete|
+| 04 | [Subdomain Fuzzer](./04-subdomain-fuzzer/) | fuzzer.py | Gobuster | Complete|
 | 05 | [SQL Injection Scanner](./05-sql-injection-scanner/) | sqli_scanner.py | SQLMap | Upcoming |
 | 06 | [Log Analyzer](./06-log-analyzer/) | log_analyzer.py | Splunk/ELK | Upcoming |
 | 07 | [File Integrity Monitor](./07-file-integrity-monitor/) | fim.py | Tripwire | Upcoming |
