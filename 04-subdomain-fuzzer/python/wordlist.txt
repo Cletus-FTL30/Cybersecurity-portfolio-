@@ -1,0 +1,15 @@
+admin
+  backup
+  uploads
+  secret
+  token
+  shell
+  login
+  dashboard
+  config
+  images
+  js
+  css
+  api
+  test
+  dev

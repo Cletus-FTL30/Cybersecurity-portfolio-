@@ -58,7 +58,7 @@
 - [x] Apply display filters (dns, icmp, http)
 - [x] Save capture.pcapng
 - [x] Take 4 screenshots
-- [~] Redact screenshots (1 and 2 need more redaction — other devices' IPs visible)
+- [x] Redact screenshots (programmatically redacted using Python/Pillow)
 - [x] Write wireshark_guide.md
 - [x] Write tools/README.md
 - [x] Push to GitHub
@@ -132,3 +132,6 @@
 | 2026-04-30 | GitHub | Set up SSH authentication, connected repo to github.com/Cletus-FTL30/Cybersecurity-portfolio-, fixed all broken links, reorganised file structure, pushed Project 1 to main branch |
 | 2026-05-03 | Packet Sniffer (Python) | Built sniffer.py with Scapy — TCP/UDP/ICMP/DNS detection, timestamps, argparse CLI, log file output |
 | 2026-05-03 | Packet Sniffer (Wireshark) | Ran live capture on ens38, applied dns/icmp/http filters, saved capture.pcapng, took 4 screenshots, wrote wireshark_guide.md, pushed to GitHub |
+| 2026-05-04 | Brute Force Tool (Python) | Built bruteforce.py — SSH + FTP brute forcing, multi-threading, argparse CLI, log file output |
+| 2026-05-04 | Brute Force Tool (Hydra) | Ran Hydra against SSH and FTP on Cletus-lab, took 2 screenshots, wrote hydra_guide.md, pushed to GitHub |
+| 2026-05-05 | Project 4 | Starting Directory/Subdomain Fuzzer — Python + Gobuster tools version |
