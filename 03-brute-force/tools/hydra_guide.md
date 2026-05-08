@@ -63,7 +63,7 @@ hydra -l cletus -P wordlist.txt ssh://192.168.0.240 -t 4
 
 Hydra tried each password against SSH and found `password123` on the 5th attempt.
 
-📸 *Screenshot 1: Hydra SSH brute force — password found*
+![Hydra SSH brute force](screenshots/01-hydra-ssh.png)
 
 ---
 
@@ -85,7 +85,7 @@ hydra -l cletus -P wordlist.txt ftp://192.168.0.240 -t 4
 
 Same result — Hydra found the password on FTP as well.
 
-📸 *Screenshot 2: Hydra FTP brute force — password found*
+![Hydra FTP brute force](screenshots/02-hydra-ftp.png)
 
 ---
 

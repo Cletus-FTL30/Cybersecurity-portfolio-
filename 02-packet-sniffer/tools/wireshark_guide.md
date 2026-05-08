@@ -48,7 +48,7 @@ On the welcome screen, select **ens38** from the interface list — it will have
 
 Double-click to start capturing.
 
-📸 *Screenshot 1: Wireshark capturing live traffic on ens38*
+![Wireshark live capture on ens38](screenshots/1_redacted.png)
 
 ---
 
@@ -80,7 +80,7 @@ dns
 
 Shows all DNS queries and responses. You can see your machine querying `192.168.0.1` (the router/DNS resolver) for `google.com` and `example.com`, and the responses with the resolved IPs.
 
-📸 *Screenshot 2: DNS filter showing google.com and example.com lookups*
+![DNS filter](screenshots/dns_2_redacted.png)
 
 ---
 
@@ -92,7 +92,7 @@ icmp
 
 Shows the 4 ping requests sent to Google's IP and the 4 replies. Each request/reply pair confirms end-to-end connectivity.
 
-📸 *Screenshot 3: ICMP filter showing ping requests and replies*
+![ICMP filter](screenshots/icmp_3_redacted.png)
 
 ---
 
@@ -104,7 +104,7 @@ http
 
 Shows the raw HTTP GET request sent by `curl http://example.com`. Unlike HTTPS, HTTP traffic is unencrypted — Wireshark can read the full request headers and response body.
 
-📸 *Screenshot 4: HTTP filter showing curl request to example.com*
+![HTTP filter](screenshots/http_4_redacted.png)
 
 ---
 

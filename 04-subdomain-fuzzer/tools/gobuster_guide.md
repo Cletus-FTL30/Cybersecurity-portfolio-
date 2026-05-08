@@ -68,7 +68,7 @@ gobuster dir -u http://192.168.0.240 -w wordlist.txt -x php,bak,txt
 
 All 4 hidden directories discovered. The 301 redirects confirm they exist — Apache redirects `/backup` to `/backup/`.
 
-📸 *Screenshot 1: Gobuster root directory scan*
+![Gobuster root directory scan](screenshots/01-gobuster-root.png)
 
 ---
 
@@ -94,7 +94,7 @@ DB_PASSWORD=supersecret123
 
 A real attacker could use these credentials to access the database directly.
 
-📸 *Screenshot 2: Gobuster finding config.bak inside /backup*
+![Gobuster finding config.bak in backup](screenshots/02-gobuster-backup.png)
 
 ---
 
