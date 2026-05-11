@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+target/lab.db
+python/reports/*.html
+python/reports/*.json

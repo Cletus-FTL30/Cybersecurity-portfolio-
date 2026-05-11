@@ -112,7 +112,30 @@
 ---
 
 ## Project 5: SQL Injection Scanner
-**Status:** [ ] Not started
+**Status:** [x] Complete
+
+### Python Version Tasks
+- [x] Intentionally vulnerable Flask target (4 injection points: GET, POST, JSON, header)
+- [x] Error-based detection with DB fingerprinting (SQLite, MySQL, MSSQL, PostgreSQL, Oracle)
+- [x] Boolean-based blind detection (response size differential)
+- [x] Time-based blind detection
+- [x] WAF bypass payloads (comment injection, case randomisation, URL encoding)
+- [x] Authentication bypass detection
+- [x] Data extraction proof-of-concept (JSON API UNION dump)
+- [x] CVSS 3.1 base score + vector string per finding
+- [x] HTML report with business impact, vulnerable vs fixed code, remediation
+- [x] JSON report output
+- [x] argparse CLI (--target, --full, --url, --get-param, -o, -v)
+- [x] README.md
+
+### SQLMap Tools Version Tasks
+- [x] GET parameter injection (boolean-blind confirmed)
+- [x] POST form injection (authentication bypass context)
+- [x] JSON API body injection (Content-Type: application/json)
+- [x] Data extraction — dumped full users table via boolean-blind
+- [x] WAF evasion with tamper scripts (space2comment, between, randomcase)
+- [x] Write sqlmap_guide.md
+- [x] Take screenshots (5 steps, 10 images total)
 
 ---
 
@@ -156,3 +179,4 @@
 | 2026-05-08 | Directory Fuzzer (Python) | Built fuzzer.py — directory + file fuzzing, threading, HTML report with colour-coded badges |
 | 2026-05-08 | Directory Fuzzer (Gobuster) | Ran Gobuster against Apache VM, found hidden dirs + config.bak, wrote gobuster_guide.md, pushed to GitHub |
 | 2026-05-08 | All guides | Fixed screenshot image links in wireshark_guide.md, hydra_guide.md, gobuster_guide.md |
+| 2026-05-10 | SQL Injection Scanner | Built VulnShop target (4 injection points), Python scanner with 4 detection techniques + CVSS scoring + HTML report, ran SQLMap across all endpoints including JSON API, dumped users table, wrote sqlmap_guide.md |
