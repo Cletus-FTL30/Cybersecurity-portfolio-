@@ -140,7 +140,33 @@
 ---
 
 ## Project 6: Log Analyzer
-**Status:** [ ] Not started
+**Status:** [~] In progress
+
+### Python Version Tasks
+- [x] Multi-format auto-detection (SSH auth log + web access log)
+- [x] SSH brute-force source detection
+- [x] Successful-login-after-brute-force (compromise) detection
+- [x] Username enumeration detection
+- [x] Web: SQLi / XSS / path traversal payload detection
+- [x] Web: malicious scanner user-agent detection
+- [x] Web: sensitive file access + directory scanning detection
+- [x] Severity scoring (Critical/High/Medium/Low)
+- [x] Console summary + HTML report + JSON output
+- [x] argparse CLI (-f, -t, -n, -o, -r)
+- [x] Sample logs with embedded attacks (samples/auth.log, access.log)
+- [x] README.md
+
+### ELK / Kibana Tools Version Tasks
+- [x] Write elk_guide.md (walkthrough + 3 screenshots wired in)
+- [x] Write docker-compose.yml (ES + Kibana + Filebeat, single-node lab)
+- [x] Write filebeat.yml (system + apache modules pointed at sample logs)
+- [x] Write tools/README.md
+- [x] Stand up the stack on the lab VM — `docker compose up -d` (ES healthy, Kibana up)
+- [x] Ship auth + access logs with Filebeat — 62 events parsed into filebeat-*
+- [x] View Kibana dashboards — used prebuilt System (SSH) + Apache (access) module dashboards
+- [x] Take screenshots (Discover failed logins, SSH dashboard, Apache response codes)
+- [ ] Create a saved search / alert for brute-force bursts (documented as next step in guide)
+- [ ] Push to GitHub
 
 ---
 
@@ -180,3 +206,4 @@
 | 2026-05-08 | Directory Fuzzer (Gobuster) | Ran Gobuster against Apache VM, found hidden dirs + config.bak, wrote gobuster_guide.md, pushed to GitHub |
 | 2026-05-08 | All guides | Fixed screenshot image links in wireshark_guide.md, hydra_guide.md, gobuster_guide.md |
 | 2026-05-10 | SQL Injection Scanner | Built VulnShop target (4 injection points), Python scanner with 4 detection techniques + CVSS scoring + HTML report, ran SQLMap across all endpoints including JSON API, dumped users table, wrote sqlmap_guide.md |
+| 2026-05-20 | Log Analyzer (Python) | Built log_analyzer.py — multi-format auto-detection (SSH auth + web access), brute force/compromise/enumeration/SQLi/XSS/traversal/scanner detection, severity scoring, HTML + JSON reports, sample logs with embedded attacks, README |

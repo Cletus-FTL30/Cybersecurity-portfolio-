@@ -1,0 +1,33 @@
+May 20 09:01:11 Cletus-lab sshd[20011]: Accepted password for cletus from 192.168.0.50 port 51022 ssh2
+May 20 09:14:02 Cletus-lab sshd[20044]: pam_unix(sshd:session): session opened for user cletus by (uid=0)
+May 20 10:15:32 Cletus-lab sshd[21001]: Failed password for invalid user admin from 203.0.113.66 port 54321 ssh2
+May 20 10:15:33 Cletus-lab sshd[21001]: Invalid user admin from 203.0.113.66 port 54321
+May 20 10:15:35 Cletus-lab sshd[21002]: Failed password for invalid user root from 203.0.113.66 port 54322 ssh2
+May 20 10:15:37 Cletus-lab sshd[21003]: Failed password for invalid user oracle from 203.0.113.66 port 54323 ssh2
+May 20 10:15:39 Cletus-lab sshd[21004]: Invalid user oracle from 203.0.113.66 port 54323
+May 20 10:15:41 Cletus-lab sshd[21005]: Failed password for invalid user postgres from 203.0.113.66 port 54324 ssh2
+May 20 10:15:43 Cletus-lab sshd[21006]: Failed password for invalid user test from 203.0.113.66 port 54325 ssh2
+May 20 10:15:45 Cletus-lab sshd[21007]: Invalid user test from 203.0.113.66 port 54325
+May 20 10:15:47 Cletus-lab sshd[21008]: Failed password for invalid user ubuntu from 203.0.113.66 port 54326 ssh2
+May 20 10:15:49 Cletus-lab sshd[21009]: Failed password for invalid user git from 203.0.113.66 port 54327 ssh2
+May 20 10:15:51 Cletus-lab sshd[21010]: Failed password for invalid user jenkins from 203.0.113.66 port 54328 ssh2
+May 20 10:15:53 Cletus-lab sshd[21011]: Failed password for invalid user www-data from 203.0.113.66 port 54329 ssh2
+May 20 10:15:55 Cletus-lab sshd[21012]: Failed password for invalid user mysql from 203.0.113.66 port 54330 ssh2
+May 20 10:15:57 Cletus-lab sshd[21013]: Failed password for invalid user deploy from 203.0.113.66 port 54331 ssh2
+May 20 10:16:21 Cletus-lab sshd[21055]: Failed password for root from 198.51.100.23 port 60011 ssh2
+May 20 10:16:23 Cletus-lab sshd[21056]: Failed password for root from 198.51.100.23 port 60012 ssh2
+May 20 10:16:25 Cletus-lab sshd[21057]: Failed password for root from 198.51.100.23 port 60013 ssh2
+May 20 10:16:27 Cletus-lab sshd[21058]: Failed password for root from 198.51.100.23 port 60014 ssh2
+May 20 10:16:29 Cletus-lab sshd[21059]: Failed password for root from 198.51.100.23 port 60015 ssh2
+May 20 10:16:31 Cletus-lab sshd[21060]: Failed password for root from 198.51.100.23 port 60016 ssh2
+May 20 10:16:33 Cletus-lab sshd[21061]: Failed password for root from 198.51.100.23 port 60017 ssh2
+May 20 10:16:35 Cletus-lab sshd[21062]: Failed password for root from 198.51.100.23 port 60018 ssh2
+May 20 10:16:37 Cletus-lab sshd[21063]: Failed password for root from 198.51.100.23 port 60019 ssh2
+May 20 10:16:39 Cletus-lab sshd[21064]: Failed password for root from 198.51.100.23 port 60020 ssh2
+May 20 10:16:41 Cletus-lab sshd[21065]: Failed password for root from 198.51.100.23 port 60021 ssh2
+May 20 10:16:43 Cletus-lab sshd[21066]: Failed password for root from 198.51.100.23 port 60022 ssh2
+May 20 10:16:50 Cletus-lab sshd[21070]: Accepted password for root from 198.51.100.23 port 60030 ssh2
+May 20 10:16:51 Cletus-lab sshd[21070]: pam_unix(sshd:session): session opened for user root by (uid=0)
+May 20 11:02:09 Cletus-lab sshd[22010]: Accepted publickey for cletus from 192.168.0.50 port 51200 ssh2
+May 20 11:45:18 Cletus-lab sshd[22500]: Failed password for cletus from 192.168.0.50 port 51299 ssh2
+May 20 11:45:25 Cletus-lab sshd[22501]: Accepted password for cletus from 192.168.0.50 port 51300 ssh2

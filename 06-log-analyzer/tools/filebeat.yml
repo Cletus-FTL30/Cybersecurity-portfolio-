@@ -1,0 +1,30 @@
+# Filebeat config for the Project 6 ELK lab.
+# Uses the built-in system + apache modules so Filebeat parses the logs into
+# structured fields (source.ip, user.name, http.response.status_code, ...)
+# without any hand-written grok. var.paths point at the sample logs that the
+# docker-compose file mounts at /logs.
+
+filebeat.modules:
+  - module: system
+    auth:
+      enabled: true
+      var.paths: ["/logs/auth.log"]        # SSH brute-force / compromise events
+    syslog:
+      enabled: false
+
+  - module: apache
+    access:
+      enabled: true
+      var.paths: ["/logs/access.log"]      # web scanning / SQLi / XSS / traversal
+    error:
+      enabled: false
+
+# setup.kibana + dashboard loading are only used by the one-off
+# `docker compose run --rm filebeat filebeat setup -e --strict.perms=false`.
+# They are intentionally NOT enabled for the long-running shipper, otherwise it
+# tries to reach Kibana on boot and exits if Kibana isn't up yet.
+setup.kibana:
+  host: "http://kibana:5601"
+
+output.elasticsearch:
+  hosts: ["http://es:9200"]
