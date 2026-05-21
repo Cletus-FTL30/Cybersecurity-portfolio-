@@ -140,7 +140,7 @@
 ---
 
 ## Project 6: Log Analyzer
-**Status:** [~] In progress
+**Status:** [x] Complete
 
 ### Python Version Tasks
 - [x] Multi-format auto-detection (SSH auth log + web access log)
@@ -165,8 +165,9 @@
 - [x] Ship auth + access logs with Filebeat — 62 events parsed into filebeat-*
 - [x] View Kibana dashboards — used prebuilt System (SSH) + Apache (access) module dashboards
 - [x] Take screenshots (Discover failed logins, SSH dashboard, Apache response codes)
-- [ ] Create a saved search / alert for brute-force bursts (documented as next step in guide)
-- [ ] Push to GitHub
+- [x] Push to GitHub
+
+**Optional future enhancement:** Kibana brute-force alert rule (Stack Management → Rules) — described in Step 4 of elk_guide.md, not built.
 
 ---
 
@@ -207,3 +208,4 @@
 | 2026-05-08 | All guides | Fixed screenshot image links in wireshark_guide.md, hydra_guide.md, gobuster_guide.md |
 | 2026-05-10 | SQL Injection Scanner | Built VulnShop target (4 injection points), Python scanner with 4 detection techniques + CVSS scoring + HTML report, ran SQLMap across all endpoints including JSON API, dumped users table, wrote sqlmap_guide.md |
 | 2026-05-20 | Log Analyzer (Python) | Built log_analyzer.py — multi-format auto-detection (SSH auth + web access), brute force/compromise/enumeration/SQLi/XSS/traversal/scanner detection, severity scoring, HTML + JSON reports, sample logs with embedded attacks, README |
+| 2026-05-21 | Log Analyzer (ELK) | Stood up ES + Kibana + Filebeat on Cletus-lab, shipped both sample logs (62 events parsed via system + apache modules), captured 3 Kibana screenshots, finished elk_guide.md; sanitized 2 real IPs in sample logs to RFC 5737 ranges; pushed Project 6 to GitHub as one clean commit |

@@ -17,7 +17,7 @@ Each project has two versions:
 | 03 | [Brute Force Tool](./03-brute-force/) | bruteforce.py | Hydra | Complete|
 | 04 | [Subdomain Fuzzer](./04-subdomain-fuzzer/) | fuzzer.py | Gobuster | Complete|
 | 05 | [SQL Injection Scanner](./05-sql-injection-scanner/) | sqli_scanner.py | SQLMap | Complete |
-| 06 | [Log Analyzer](./06-log-analyzer/) | log_analyzer.py | Splunk/ELK | Upcoming |
+| 06 | [Log Analyzer](./06-log-analyzer/) | log_analyzer.py | ELK Stack | Complete |
 | 07 | [File Integrity Monitor](./07-file-integrity-monitor/) | fim.py | Tripwire | Upcoming |
 | 08 | [Password Auditor](./08-password-auditor/) | auditor.py | Hashcat | Upcoming |
 
