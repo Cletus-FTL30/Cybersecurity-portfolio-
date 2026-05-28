@@ -172,7 +172,7 @@
 ---
 
 ## Project 7: File Integrity Monitor
-**Status:** [~] Python + AIDE done, screenshots in (tools scope = AIDE only, Tripwire dropped); push pending
+**Status:** [x] Complete (AIDE-only tools version; Tripwire dropped from scope)
 
 ### Python Version Tasks
 - [x] SHA-256 baseline of a directory tree (size, perms, mtime per file)
@@ -189,7 +189,7 @@
 - [x] Write aide_guide.md (install, init DB, simulate tamper, check)
 - [x] Ran AIDE on Cletus-lab — baseline (7 entries), tamper, check caught all 4 changes (+ /opt/watched/etc dir mtime)
 - [x] Screenshots in tools/screenshots/ (aide-01-init, aide-02-check, aide-03-check-detail)
-- [ ] Push to GitHub
+- [x] Pushed to GitHub (2026-05-28)
 - Tripwire dropped from scope (user decision 2026-05-28)
 
 ---
@@ -228,4 +228,4 @@
 | 2026-05-20 | Log Analyzer (Python) | Built log_analyzer.py — multi-format auto-detection (SSH auth + web access), brute force/compromise/enumeration/SQLi/XSS/traversal/scanner detection, severity scoring, HTML + JSON reports, sample logs with embedded attacks, README |
 | 2026-05-21 | Log Analyzer (ELK) | Stood up ES + Kibana + Filebeat on Cletus-lab, shipped both sample logs (62 events parsed via system + apache modules), captured 3 Kibana screenshots, finished elk_guide.md; sanitized 2 real IPs in sample logs to RFC 5737 ranges; pushed Project 6 to GitHub as one clean commit |
 | 2026-05-28 | File Integrity Monitor (Python) | Built fim.py — SHA-256 baseline + check subcommands, recursive scan with glob excludes, Added/Modified/Deleted/Permissions detection, console + HTML + JSON, non-zero exit on changes; sample watched tree + baseline + demo report from a simulated compromise; README |
-| 2026-05-28 | File Integrity Monitor (AIDE) | Wrote AIDE tools guide; ran AIDE 0.18.6 on Cletus-lab against /opt/watched — baselined 7 entries, simulated tamper (web shell add, hosts delete, sshd_config edit, backup.sh chmod 777), check caught all 4 + the etc/ dir mtime change. Tripwire dropped from scope. Screenshots + push still pending |
+| 2026-05-28 | File Integrity Monitor (AIDE) | Wrote AIDE tools guide; ran AIDE 0.18.6 on Cletus-lab against /opt/watched — baselined 7 entries, simulated tamper (web shell add, hosts delete, sshd_config edit, backup.sh chmod 777), check caught all 4 + the etc/ dir mtime change. Tripwire dropped from scope. Captured 3 screenshots; pushed Project 7 to GitHub (AIDE-only) |

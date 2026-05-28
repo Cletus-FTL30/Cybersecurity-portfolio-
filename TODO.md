@@ -7,19 +7,17 @@
 - [x] Project 4 — Directory/Subdomain Fuzzer (Python + Gobuster)
 - [x] Project 5 — SQL Injection Scanner (Python + SQLMap)
 - [x] Project 6 — Log Analyzer (Python + ELK Stack)
+- [x] Project 7 — File Integrity Monitor (Python + AIDE)
 
-## Current Project: File Integrity Monitor (Project 7)
-- [x] Python: hash baseline + change detection (added / modified / deleted files)
-- [x] Recursive directory monitoring
-- [x] Report output (console + JSON/HTML)
-- [x] argparse CLI
-- [x] README.md
-- [x] Tools version (AIDE) walkthrough guide
-- [x] Tools version: ran AIDE on lab VM (baseline + tamper + check)
-- [x] Add AIDE screenshots to tools/screenshots/ (3 shots)
+## Current Project: Password Auditor (Project 8)
+- [ ] Python: hash identification + dictionary / brute-force cracking
+- [ ] Password entropy / strength scoring
+- [ ] Report output (console + JSON/HTML)
+- [ ] argparse CLI
+- [ ] README.md
+- [ ] Tools version (Hashcat) walkthrough with screenshots
 - [ ] Push to GitHub
 
 ## Upcoming Projects
-- [ ] Project 8 — Password Auditor (hash cracker + entropy scorer)
 - [ ] Project 9 — ARP Spoofer / Network Mapper
 - [ ] Project 10 — Steganography Tool
