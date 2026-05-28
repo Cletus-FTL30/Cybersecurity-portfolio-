@@ -14,8 +14,9 @@
 - [x] Report output (console + JSON/HTML)
 - [x] argparse CLI
 - [x] README.md
-- [x] Tools version (AIDE + Tripwire) walkthrough guides
-- [ ] Tools version: run on lab VM + capture screenshots
+- [x] Tools version (AIDE) walkthrough guide
+- [x] Tools version: ran AIDE on lab VM (baseline + tamper + check)
+- [x] Add AIDE screenshots to tools/screenshots/ (3 shots)
 - [ ] Push to GitHub
 
 ## Upcoming Projects

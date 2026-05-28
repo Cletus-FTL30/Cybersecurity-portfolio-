@@ -3,7 +3,7 @@
 **AIDE** (Advanced Intrusion Detection Environment) is the default file
 integrity monitor on Debian/Ubuntu and RHEL. It builds a database of file
 hashes and attributes, then compares the live filesystem against it on demand.
-It maps almost 1:1 onto the from-scratch Python tool: `aideinit` is
+It maps almost 1:1 onto the from-scratch Python tool: `aide --init` is
 `fim.py baseline`, and `aide --check` is `fim.py check`.
 
 > **Lab:** Cletus-lab (Ubuntu VM, `192.168.0.240`). All work is on a system I own.
@@ -100,41 +100,53 @@ sudo chmod 777 /opt/watched/bin/backup.sh
 sudo aide -c /etc/aide/watched.conf --check
 ```
 
-AIDE exits non-zero and prints a summary plus per-file detail — the added web
+AIDE exits non-zero and prints a summary plus per-entry detail — the added web
 shell, the removed hosts file, the changed config hash, and the permission flip:
 
 ```text
 AIDE found differences between database and filesystem!!
 
 Summary:
-  Total number of entries:  4
-  Added entries:            1
-  Removed entries:          1
-  Changed entries:          2
+  Total number of entries:    7
+  Added entries:              1
+  Removed entries:            1
+  Changed entries:            3
 
 Added entries:
-f++++++++++++++++: /opt/watched/etc/.shell.php
+f+++++++++++++++++: /opt/watched/etc/.shell.php
 
 Removed entries:
-f----------------: /opt/watched/etc/hosts
+f-----------------: /opt/watched/etc/hosts
 
 Changed entries:
-f ...    .C...  : /opt/watched/etc/sshd_config
-f ...p...   .  : /opt/watched/bin/backup.sh
+f = p.. .c...     : /opt/watched/bin/backup.sh
+d = ... mc..      : /opt/watched/etc
+f > ... mc..H     : /opt/watched/etc/sshd_config
 
 Detailed information about changes:
-File: /opt/watched/etc/sshd_config
- SHA256   : 02Yr...old...   | 7HhP...new...
-
 File: /opt/watched/bin/backup.sh
- Perm     : -rw-rw-r--      | -rwxrwxrwx
+ Perm      : -rw-r--r--                | -rwxrwxrwx
+ Ctime     : 2026-05-28 21:13:47 +0100 | 2026-05-28 21:31:39 +0100
+
+File: /opt/watched/etc/sshd_config
+ Size      : 120                       | 121
+ SHA256    : 02Taogi...old...          | JEAm+Xhm...new...
 ```
 
-![AIDE check reporting the four changes](screenshots/aide-02-check.png)
+![AIDE check reporting the simulated compromise](screenshots/aide-02-check.png)
 
-In the change flags, `C` marks a content/hash change and `p` a permission
+In the change flags, `H` marks a content/hash change and `p` a permission
 change — exactly the **Modified** and **Permissions Changed** categories the
-Python tool reports.
+Python tool reports. The extra `d ... /opt/watched/etc` line is the **directory**
+itself: adding and removing files updates the folder's mtime/ctime, and AIDE
+tracks directories too (the Python tool only tracks files).
+
+The *Detailed information about changes* section spells out the exact
+before/after for every attribute — the `backup.sh` permission flip
+(`-rw-r--r--` → `-rwxrwxrwx`) and the `sshd_config` size and SHA-256 hash both
+moving:
+
+![AIDE detailed view — old vs. new attribute values](screenshots/aide-03-check-detail.png)
 
 ---
 
@@ -158,7 +170,7 @@ pattern: a trusted baseline plus an automated daily diff.
 
 | Change | `fim.py` | AIDE |
 |--------|----------|------|
-| Contents changed | Modified (Critical) | `C` flag + SHA256 old/new |
+| Contents changed | Modified (Critical) | `H` flag + SHA256 old/new |
 | New file | Added (High) | `f+++…` under *Added entries* |
 | Missing file | Deleted (High) | `f---…` under *Removed entries* |
 | Permissions changed | Permissions Changed (Medium) | `p` flag + Perm old/new |
