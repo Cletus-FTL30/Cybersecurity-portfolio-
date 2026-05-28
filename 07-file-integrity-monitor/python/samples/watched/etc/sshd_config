@@ -1,0 +1,6 @@
+Port 22
+PermitRootLogin no
+PasswordAuthentication yes
+PubkeyAuthentication yes
+X11Forwarding no
+ClientAliveInterval 300

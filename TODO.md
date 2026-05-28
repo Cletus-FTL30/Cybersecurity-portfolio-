@@ -9,12 +9,13 @@
 - [x] Project 6 — Log Analyzer (Python + ELK Stack)
 
 ## Current Project: File Integrity Monitor (Project 7)
-- [ ] Python: hash baseline + change detection (added / modified / deleted files)
-- [ ] Recursive directory monitoring
-- [ ] Report output (console + JSON/HTML)
-- [ ] argparse CLI
-- [ ] README.md
-- [ ] Tools version (e.g. Tripwire / AIDE) walkthrough with screenshots
+- [x] Python: hash baseline + change detection (added / modified / deleted files)
+- [x] Recursive directory monitoring
+- [x] Report output (console + JSON/HTML)
+- [x] argparse CLI
+- [x] README.md
+- [x] Tools version (AIDE + Tripwire) walkthrough guides
+- [ ] Tools version: run on lab VM + capture screenshots
 - [ ] Push to GitHub
 
 ## Upcoming Projects

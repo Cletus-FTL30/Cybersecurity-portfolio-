@@ -172,7 +172,25 @@
 ---
 
 ## Project 7: File Integrity Monitor
-**Status:** [ ] Not started
+**Status:** [~] Python done; tools guides written, lab runs + screenshots pending
+
+### Python Version Tasks
+- [x] SHA-256 baseline of a directory tree (size, perms, mtime per file)
+- [x] Recursive monitoring with glob-based exclusions (`-x`)
+- [x] Detect Added / Modified / Deleted / Permissions-Changed
+- [x] Severity scoring (Critical/High/Medium) + non-zero exit on changes
+- [x] Console summary + HTML report + JSON output
+- [x] argparse subcommands (`baseline` / `check`)
+- [x] Sample watched tree + baseline + demo report (simulated compromise)
+- [x] README.md
+
+### AIDE + Tripwire Tools Version Tasks
+- [x] Write tools/README.md (AIDE vs Tripwire comparison)
+- [x] Write aide_guide.md (install, init DB, simulate tamper, check)
+- [x] Write tripwire_guide.md (keys, policy, signed DB, check, reports)
+- [ ] Run AIDE on the lab VM and capture screenshots (aide-01-init, aide-02-check)
+- [ ] Run Tripwire on the lab VM and capture screenshots (tw-01..03)
+- [ ] Push to GitHub
 
 ---
 
@@ -209,3 +227,5 @@
 | 2026-05-10 | SQL Injection Scanner | Built VulnShop target (4 injection points), Python scanner with 4 detection techniques + CVSS scoring + HTML report, ran SQLMap across all endpoints including JSON API, dumped users table, wrote sqlmap_guide.md |
 | 2026-05-20 | Log Analyzer (Python) | Built log_analyzer.py — multi-format auto-detection (SSH auth + web access), brute force/compromise/enumeration/SQLi/XSS/traversal/scanner detection, severity scoring, HTML + JSON reports, sample logs with embedded attacks, README |
 | 2026-05-21 | Log Analyzer (ELK) | Stood up ES + Kibana + Filebeat on Cletus-lab, shipped both sample logs (62 events parsed via system + apache modules), captured 3 Kibana screenshots, finished elk_guide.md; sanitized 2 real IPs in sample logs to RFC 5737 ranges; pushed Project 6 to GitHub as one clean commit |
+| 2026-05-28 | File Integrity Monitor (Python) | Built fim.py — SHA-256 baseline + check subcommands, recursive scan with glob excludes, Added/Modified/Deleted/Permissions detection, console + HTML + JSON, non-zero exit on changes; sample watched tree + baseline + demo report from a simulated compromise; README |
+| 2026-05-28 | File Integrity Monitor (AIDE/Tripwire) | Wrote tools version guides — tools/README.md (AIDE vs Tripwire), aide_guide.md, tripwire_guide.md (both with the same simulated tamper). Lab runs + screenshots still to do on Cletus-lab |
