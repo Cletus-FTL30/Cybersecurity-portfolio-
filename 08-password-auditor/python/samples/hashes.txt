@@ -1,0 +1,15 @@
+# Sample hash dump for Password Auditor demo
+# Mixed MD5, SHA-1, SHA-256, SHA-512, NTLM, and bcrypt hashes.
+# Most crack against samples/wordlist.txt — one is intentionally uncrackable.
+
+5f4dcc3b5aa765d61d8327deb882cf99
+5d41402abc4b2a76b9719d911017c592
+d033e22ae348aeb5660fc2140aec35850c4da997
+b1b3773a05c0ed0176787a4f1574ff0075f7521e
+1c8bfe8f801d79745c4631d09fff36c82aa37fc4cce4fc946683d7b336b63032
+a9c43be948c5cabd56ef2bacffb77cdaa5eec49dd5eb0cc4129cf3eda5f0e74c
+65a0ef45df509ad1cf01501b2a1b12cc2fbac0f00a31ae6f3ddc361396955216fb3a4d84e18dc1065dff311e3943878bc0bdb8a60caefd2fbdc6b2a757a3204b
+5835048ce94ad0564e29a924a03510ef
+2ab96390c7dbe3439de74d0c9b0b1767
+$2b$12$KIXQ4HZ6vQQK7r3vQvJjmOLG7m9Zx8B5h.uJ7Q8u9Y8B9H1G0F2D3
+6cda47ad3563accac933c344a410d647b91402b88c81a0f403176d29c88d9d5a

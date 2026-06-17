@@ -8,15 +8,7 @@
 - [x] Project 5 — SQL Injection Scanner (Python + SQLMap)
 - [x] Project 6 — Log Analyzer (Python + ELK Stack)
 - [x] Project 7 — File Integrity Monitor (Python + AIDE)
-
-## Current Project: Password Auditor (Project 8)
-- [ ] Python: hash identification + dictionary / brute-force cracking
-- [ ] Password entropy / strength scoring
-- [ ] Report output (console + JSON/HTML)
-- [ ] argparse CLI
-- [ ] README.md
-- [ ] Tools version (Hashcat) walkthrough with screenshots
-- [ ] Push to GitHub
+- [x] Project 8 — Password Auditor (Python + Hashcat)
 
 ## Upcoming Projects
 - [ ] Project 9 — ARP Spoofer / Network Mapper

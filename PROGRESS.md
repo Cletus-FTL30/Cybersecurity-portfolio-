@@ -195,7 +195,29 @@
 ---
 
 ## Project 8: Password Auditor
-**Status:** [ ] Not started
+**Status:** [x] Complete
+
+### Python Version Tasks
+- [x] Hash type identification (`identify` subcommand)
+- [x] Dictionary cracking across MD5/SHA-1/SHA-256/SHA-512/NTLM (`crack`)
+- [x] Brute-force cracking (`crack --brute`)
+- [x] NTLM support (MD4 verified against RFC 1320 test vectors)
+- [x] Password entropy / strength scoring with common-password check (`score`)
+- [x] Console summary + JSON + HTML report output
+- [x] argparse subcommands (`identify` / `crack` / `score`)
+- [x] stdlib-only (no third-party dependencies)
+- [x] README.md
+
+### Hashcat Tools Version Tasks
+- [x] Write tools/README.md + hashcat_guide.md (7 steps)
+- [x] Sample hash files (md5, sha1, sha256, sha512, ntlm, pin) + wordlist.txt
+- [x] Dictionary attack (MD5) — 3/3 cracked
+- [x] Same attack across SHA-1 / SHA-256 / SHA-512 — SHA-256 left 1 uncracked (Exhausted)
+- [x] NTLM crack (`-m 1000`) — recovered password1
+- [x] Rules attack with best64.rule — 30-word list expanded to 2310 candidates
+- [x] Mask / brute-force attack (`-a 3 ?d?d?d?d`) — cracked 4-digit PIN
+- [x] Read results back from potfile (`--show`)
+- [x] 6 screenshots in tools/screenshots/ (01-md5-dictionary … 06-show)
 
 ---
 
@@ -229,3 +251,5 @@
 | 2026-05-21 | Log Analyzer (ELK) | Stood up ES + Kibana + Filebeat on Cletus-lab, shipped both sample logs (62 events parsed via system + apache modules), captured 3 Kibana screenshots, finished elk_guide.md; sanitized 2 real IPs in sample logs to RFC 5737 ranges; pushed Project 6 to GitHub as one clean commit |
 | 2026-05-28 | File Integrity Monitor (Python) | Built fim.py — SHA-256 baseline + check subcommands, recursive scan with glob excludes, Added/Modified/Deleted/Permissions detection, console + HTML + JSON, non-zero exit on changes; sample watched tree + baseline + demo report from a simulated compromise; README |
 | 2026-05-28 | File Integrity Monitor (AIDE) | Wrote AIDE tools guide; ran AIDE 0.18.6 on Cletus-lab against /opt/watched — baselined 7 entries, simulated tamper (web shell add, hosts delete, sshd_config edit, backup.sh chmod 777), check caught all 4 + the etc/ dir mtime change. Tripwire dropped from scope. Captured 3 screenshots; pushed Project 7 to GitHub (AIDE-only) |
+| 2026-05-30 | Password Auditor (Python) | Built auditor.py (stdlib-only) — identify / crack / score subcommands, dictionary + brute-force cracking across MD5/SHA-1/SHA-256/SHA-512/NTLM, MD4 verified against RFC 1320 vectors, entropy scoring with common-password check, JSON + HTML reports, README |
+| 2026-06-17 | Password Auditor (Hashcat) | Ran Hashcat 6.2.6 lab on Cletus-lab — dictionary (MD5 3/3), SHA family (SHA-256 left 1 Exhausted), NTLM (password1), best64 rules (30→2310 candidates), mask brute-force of a 4-digit PIN, potfile --show recap; captured all 6 screenshots; pushed Project 8 to GitHub |
