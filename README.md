@@ -20,6 +20,7 @@ Each project has two versions:
 | 06 | [Log Analyzer](./06-log-analyzer/) | log_analyzer.py | ELK Stack | Complete |
 | 07 | [File Integrity Monitor](./07-file-integrity-monitor/) | fim.py | AIDE | Complete |
 | 08 | [Password Auditor](./08-password-auditor/) | auditor.py | Hashcat | Complete |
+| 09 | [ARP Spoofer / Network Mapper](./09-arp-spoofer-network-mapper/) | netmapper.py, arpspoof.py | bettercap / arp-scan | Complete |
 
 ---
 

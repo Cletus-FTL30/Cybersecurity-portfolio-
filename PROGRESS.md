@@ -222,7 +222,23 @@
 ---
 
 ## Project 9: ARP Spoofer / Network Mapper
-**Status:** [ ] Not started
+**Status:** [x] Complete
+
+### Python Version Tasks
+- [x] netmapper.py — ARP-sweep a subnet, list IP/MAC/vendor (built-in + optional IEEE OUI)
+- [x] netmapper.py — console table + JSON output
+- [x] arpspoof.py — Scapy ARP cache poisoning (forge replies to victim + gateway)
+- [x] arpspoof.py — dry-run by default; `--live`/`--forward` for real MITM on owned nets
+- [x] arpspoof.py — restore ARP caches + disable IP forwarding on Ctrl+C
+- [x] README.md with usage + defensive takeaways
+- [x] Tools version: arp-scan / netdiscover / bettercap mapping walkthrough
+- [x] Run mapping lab on Cletus-lab + capture screenshots (own devices only, others redacted)
+- [ ] Push to GitHub
+
+**Scope decision (2026-06-18):** Map-only, no real poisoning. The mapping
+steps run for real (own subnet, others redacted); ARP spoofing is shown as
+code/commands + defensive detection, not executed. bettercap chosen for the
+tools-version mapping demo.
 
 ---
 
@@ -253,3 +269,5 @@
 | 2026-05-28 | File Integrity Monitor (AIDE) | Wrote AIDE tools guide; ran AIDE 0.18.6 on Cletus-lab against /opt/watched — baselined 7 entries, simulated tamper (web shell add, hosts delete, sshd_config edit, backup.sh chmod 777), check caught all 4 + the etc/ dir mtime change. Tripwire dropped from scope. Captured 3 screenshots; pushed Project 7 to GitHub (AIDE-only) |
 | 2026-05-30 | Password Auditor (Python) | Built auditor.py (stdlib-only) — identify / crack / score subcommands, dictionary + brute-force cracking across MD5/SHA-1/SHA-256/SHA-512/NTLM, MD4 verified against RFC 1320 vectors, entropy scoring with common-password check, JSON + HTML reports, README |
 | 2026-06-17 | Password Auditor (Hashcat) | Ran Hashcat 6.2.6 lab on Cletus-lab — dictionary (MD5 3/3), SHA family (SHA-256 left 1 Exhausted), NTLM (password1), best64 rules (30→2310 candidates), mask brute-force of a 4-digit PIN, potfile --show recap; captured all 6 screenshots; pushed Project 8 to GitHub |
+| 2026-06-18 | ARP Mapper/Spoofer (Python) | Built netmapper.py (Scapy ARP sweep → IP/MAC/vendor, console + JSON) and arpspoof.py (Scapy ARP poisoning, dry-run by default, --live/--forward for real MITM, restores caches on Ctrl+C); README with defensive takeaways. Scope: map-only, no real poisoning |
+| 2026-06-18 | ARP Mapper/Spoofer (tools) | Wrote arp_mapping_guide.md (arp-scan / netdiscover / bettercap mapping + spoof explanation + detection/defense); ran the mapping lab on Cletus-lab, captured 3 screenshots (arp-scan, netdiscover, bettercap net.probe), redacted all other-device IP/MAC/hostnames with Pillow (household device names left the LAN visible, all blacked out) |
